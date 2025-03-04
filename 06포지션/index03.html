@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+        .reply {border: 1px solid #777; width: 500px; margin: 0 auto; position: relative; padding: 10px;}
+        .reply > img {position: absolute; left: 10px; top: 10px;}
+        .reply > .content {padding-left: 60px;}
+        .content > textarea {width: 100%; box-sizing: border-box; resize: vertical; min-height: 80px;}
+
+        .control {overflow: hidden;}
+        .control > .input-area {float: left;}
+        .control > .input-area > input {display: block;}
+        .control > button {float: right;}
+
+        .content {position: relative; /* border: 1px solid #777; */}
+        .content > img {position: absolute; left: 10px; top: 10px;}
+        
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="reply">
+        <img src="prog.jpeg" alt="개구리" width="50px" height="50px">
+        <div class="content">
+            <textarea></textarea>
+            <div class="control">
+                <div class="input-area">
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <button>등록</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <img src="prog.jpeg" alt="" width="50px" height="50px" class="img">
+                <div class="sub">
+                    <strong>제목</strong>
+                    <p>내용</p>
+                </div>
+                <div class="button">
+                    <button>삭제</button>
+                    <button>수정</button>
+                 </div>
+             </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
