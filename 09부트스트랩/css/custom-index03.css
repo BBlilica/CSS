@@ -1,0 +1,69 @@
+/* 동일한 클래스를 덮는 방법 or 사용자정의 클래스를 만들어서 주는방법 */
+/* 헤더부분 */
+.form-control {
+    border-radius: 0;
+}
+.form-control:focus {
+    border-color: #ccc;
+    box-shadow: none;
+}
+.btn {
+    border-radius: 0;
+}
+
+
+.navbar-inverse {
+    background-color: #263238;
+    border-color: #263238;
+}
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.navbar-brand {
+    padding: 4px 15px;
+}
+.navbar-inverse .navbar-nav>li>a:focus, 
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #304047;
+}
+/* 슬라이드 영역 */
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+/* 본문영역 */
+.prod-list {
+    border: 1px solid #777;
+    padding: 5px;
+}
+
+.prod-list > li [class*=col-] {
+    padding: 5px;
+
+}
+
+.prod-link {
+    border: 1px solid #777;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.prod-link > .arrow {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: #e3e3e3;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.prod-link > .hover {
+    background-color: #50a0ff;
+    opacity: 0; /* 투명도 기본값 1 - 보임 0 안보임 */
+}
+.prod-link:hover > .hover {
+    opacity: 1;
+}
